@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lalat Mhetras – Automobile Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/main-styles.css" />
+    <link rel="stylesheet" href="css/responsive-styles.css" />
+
+    <!-- Inline SVG icon definitions (reusable via <use>) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.08 1.19h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </symbol>
+        <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <polyline points="22,6 12,13 2,6"/>
+        </symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </symbol>
+        <symbol id="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+        </symbol>
+        <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </symbol>
+        <symbol id="icon-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </symbol>
+        <symbol id="icon-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7"/>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+        </symbol>
+        <symbol id="icon-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </symbol>
+        <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </symbol>
+        <symbol id="icon-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </symbol>
+        <symbol id="icon-fingerprint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10"/>
+            <path d="M12 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6v.5"/>
+            <path d="M12 14c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2"/>
+        </symbol>
+    </svg>
+</head>
+<body>
+    <div class="page-layout">
+        
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+            <div class="sidebar__content">
+                <div class="profile-photo-container">
+                    <!-- Initials placeholder (always visible, photo overlays it when loaded) -->
+                    <div class="profile-placeholder" aria-hidden="true">LM</div>
+                    <img src="images/profile.png"
+                         alt="Lalat Mhetras"
+                         class="profile-photo"
+                         onerror="this.style.display='none'" />
+                </div>
+                <h1 class="sidebar__name">Lalat Mhetras</h1>
+                <p class="sidebar__title">Automobile</p>
+
+                <div class="social-row">
+                    <a href="tel:+919595305655" aria-label="Call">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-phone"/></svg></span>
+                    </a>
+                    <a href="mailto:lalat3132@gmail.com" aria-label="Email">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-email"/></svg></span>
+                    </a>
+                    <a href="https://wa.me/919595305655" target="_blank" aria-label="WhatsApp">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-whatsapp"/></svg></span>
+                    </a>
+                    <a href="https://goo.gl/maps/iQSF5c4iqXyi5AV37" target="_blank" aria-label="Location">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-location"/></svg></span>
+                    </a>
+                </div>
+                
+                <div class="sidebar__section">
+                    <h3 class="sidebar__heading">
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-fingerprint"/></svg></span>
+                        Personal Info
+                    </h3>
+                    <ul class="sidebar-list">
+                        <li><strong>Address:</strong> <a href="https://goo.gl/maps/iQSF5c4iqXyi5AV37" target="_blank" class="sidebar-link">Geeta Nagar, Solapur – 413005 ↗</a></li>
+                        <li><strong>Location:</strong> Solapur, Maharashtra, India</li>
+                        <li><strong>Experience:</strong> 36+ Years</li>
+                        <li><strong>Date of Birth:</strong> May 1968</li>
+                        <li><strong>Gender:</strong> Male</li>
+                        <li><strong>Marital Status:</strong> Married</li>
+                        <li><strong>Nationality:</strong> Indian</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar__section">
+                    <h3 class="sidebar__heading">
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-briefcase"/></svg></span>
+                        Portfolio
+                    </h3>
+                    <ul class="sidebar-list">
+                        <li><a href="https://drive.google.com/drive/folders/1AUr9G_Qc70tXIsrPaDy2-nHlRs3bmfEK?usp=drive_link" target="_blank" class="sidebar-link">Digital Resume Folder ↗</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar__section">
+                    <h3 class="sidebar__heading">
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-globe"/></svg></span>
+                        Languages
+                    </h3>
+                    <ul class="sidebar-list">
+                        <li>Marathi, Hindi, English</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar__section">
+                    <h3 class="sidebar__heading">
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-award"/></svg></span>
+                        Volunteering
+                    </h3>
+                    <ul class="sidebar-list">
+                        <li>Organized free service camps in Solapur and nearby areas.</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar__section">
+                    <h3 class="sidebar__heading">
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-people"/></svg></span>
+                        Interests
+                    </h3>
+                    <ul class="sidebar-list">
+                        <li>Table Tennis, Swimming</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <main class="main-content">
+            <!-- NAVBAR -->
+            <header class="site-header" id="top">
+                <nav class="navbar">
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <ul class="navbar__links" id="navLinks">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#associations">Associations</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- ABOUT SUMMARY -->
+            <section class="section reveal" id="about">
+                <h2 class="section-title">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-fingerprint"/></svg></span>
+                    Professional Summary
+                </h2>
+                <p class="summary-text">
+                    Proprietor of Sharp Auto Service, a multi-brand workshop servicing Hero Honda motorcycles for over 36 years. Trained at Laxmi Automobiles, Solapur (authorized Hero Honda spare parts dealer) and completed trainee training at the Hero Honda Centre, Delhi. Also organized free service camps in and around Solapur.
+                </p>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section class="section reveal" id="experience">
+                <h2 class="section-title">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-briefcase"/></svg></span>
+                    Work Experience
+                </h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Manager</h3>
+                                    <a class="timeline-company" href="https://drive.google.com/file/d/1fjZsVkk_mwJ1GjEnhAlv-ntj7gFb-J3J/view?usp=sharing" target="_blank" title="View Badge">Bakale nx E-Motors (Authorized Dealer, Lectrix EV) ↗</a>
+                                </div>
+                                <span class="timeline-date">July 2025 – Present</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Associate</h3>
+                                    <a class="timeline-company" href="https://drive.google.com/file/d/1GjPNah8jlojEVVEPx1p2RlMVhNmNsT4c/view?usp=share_link" target="_blank" title="View Badge">United Engineers &amp; Consultants | Pune ↗</a>
+                                </div>
+                                <span class="timeline-date">2023 – July 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Business Associate</h3>
+                                    <a class="timeline-company" href="https://drive.google.com/file/d/1-4ivlarxV9bUcEg_RQxowlKNbtJ48bzz/view?usp=share_link" target="_blank" title="View Badge">Kaizen Honda ↗</a>
+                                </div>
+                                <span class="timeline-date">2021 – 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Proprietor</h3>
+                                    <a class="timeline-company" href="https://drive.google.com/file/d/1HTKDWY2Lm9JcnpDJZMM6akJ0YgwXHtO8/view?usp=share_link" target="_blank" title="View Badge">Sharp Auto Service ↗</a>
+                                </div>
+                                <span class="timeline-date">2016 – 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Partner</h3>
+                                    <a class="timeline-company" href="https://drive.google.com/file/d/1W1VCDVxjWbkhaOEixQKLBobtM2UKmVYs/view?usp=share_link" target="_blank" title="View Badge">Sharp Auto Service – Honda Clinic | Pune ↗</a>
+                                </div>
+                                <span class="timeline-date">2013 – 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Proprietor (Own Workshop)</h3>
+                                    <a class="timeline-company" href="https://drive.google.com/file/d/1QsdRz5zeNPhNol5iu4IXIGfg6cS0xGwR/view?usp=share_link" target="_blank" title="View Badge">Sharp Auto Service ↗</a>
+                                </div>
+                                <span class="timeline-date">1991 – 2013</span>
+                            </div>
+                            <ul class="timeline-highlights">
+                                <li>Multi-brand workshop servicing Hero Honda motorcycles</li>
+                                <li>Organized free service camps in Solapur and nearby areas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Work Shop Incharge</h3>
+                                    <a class="timeline-company" href="https://drive.google.com/file/d/1J7Ur4EVQfcZTHAuc6QXocyemI3a_Ukv6/view?usp=share_link" target="_blank" title="View Document">Laxmi Automobiles ↗</a>
+                                </div>
+                                <span class="timeline-date">1989 – 1991</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">SR. Mechanic</h3>
+                                    <span class="timeline-company">Laxmi Automobiles</span>
+                                </div>
+                                <span class="timeline-date">1988 – 1989</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">JR. Mechanic</h3>
+                                    <span class="timeline-company">Laxmi Automobiles | Solapur</span>
+                                </div>
+                                <span class="timeline-date">1986 – 1988</span>
+                            </div>
+                            <ul class="timeline-highlights">
+                                <li>Trainee at Hero Honda Centre, Delhi during this period</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION -->
+            <section class="section reveal" id="education">
+                <h2 class="section-title">
+                    <a href="https://drive.google.com/file/d/17mo5xZHh21u-MJPtW9J-X6ugpiJvuTps/view?usp=drive_link" target="_blank" class="section-title-link" title="View Education Badge">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-graduation"/></svg></span>
+                        Education ↗
+                    </a>
+                </h2>
+                <div class="grid-2">
+                    <div class="card reveal reveal-delay-1">
+                        <h3 class="card-title">12th – Automobile (Vocational)</h3>
+                        <p class="card-subtitle">Digambar Jain Gurukul Jr. College</p>
+                        <div class="card-date">1984 – 1985</div>
+                    </div>
+                    <div class="card reveal reveal-delay-2">
+                        <h3 class="card-title">10th – Technical</h3>
+                        <p class="card-subtitle">Digambar Jain Gurukul High School</p>
+                        <div class="card-date">1983 – 1984</div>
+                    </div>
+                    <div class="card reveal reveal-delay-3">
+                        <h3 class="card-title">National Certificate in Modular Employable Skills (I.T.I.)</h3>
+                        <p class="card-subtitle">Vocational Training</p>
+                        <div class="card-date">2010 – 2011</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section class="section reveal" id="skills">
+                <h2 class="section-title">
+                    <a href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" class="section-title-link" title="View Skills Certificates Folder">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg></span>
+                        Skills ↗
+                    </a>
+                </h2>
+                <div class="skills-container">
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> 2 Wheeler Troubleshooting</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Management Work</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Well Knowledge of Computer</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Excel for Beginners</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Introduction to Digital Marketing</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Content Marketing Basics</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Social Media Management</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Google Search Campaign</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Website Creation</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> AI in Digital Marketing</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> ChatGPT for Beginners</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Digital Card Creation</span>
+                    <span class="skill-tag"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Reporting</span>
+                </div>
+            </section>
+
+            <!-- CERTIFICATIONS & AWARDS -->
+            <section class="section reveal" id="certifications">
+                <h2 class="section-title">
+                    <a href="https://drive.google.com/file/d/1QnP0CcK7qGq7rLvEn1Qx9wWkldIEiMMi/view?usp=sharing" target="_blank" class="section-title-link" title="View Certifications Document">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-award"/></svg></span>
+                        Certifications &amp; Awards ↗
+                    </a>
+                </h2>
+                
+                <h3 style="margin-bottom:16px; color:var(--color-navy);">Awards</h3>
+                <div class="grid-2" style="margin-bottom:32px;">
+                    <div class="card award-card reveal reveal-delay-1">
+                        <h3 class="card-title">Best Garage Award</h3>
+                        <p class="card-subtitle">Solapur</p>
+                        <div class="card-date">1994 – 1995</div>
+                    </div>
+                    <div class="card award-card reveal reveal-delay-2">
+                        <h3 class="card-title">Best Performer of the Year</h3>
+                        <p class="card-subtitle">Rotary District</p>
+                        <div class="card-date">2011 – 2012</div>
+                    </div>
+                    <div class="card award-card reveal reveal-delay-3">
+                        <h3 class="card-title">Best Service Award</h3>
+                        <p class="card-subtitle">Castrol India</p>
+                        <div class="card-date">2013 – 2014</div>
+                    </div>
+                    <div class="card award-card reveal reveal-delay-4">
+                        <h3 class="card-title">Appreciated by World Book of Records</h3>
+                        <p class="card-subtitle">London, UK</p>
+                        <div class="card-date">2022</div>
+                    </div>
+                </div>
+
+                <h3 style="margin-bottom:16px; color:var(--color-navy);">Certifications</h3>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3 class="card-title">Certification of Training – Hero Honda</h3>
+                        <p class="card-subtitle">New Delhi</p>
+                        <div class="card-date">1987 – 1988</div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">ISO 9001:2015 Certification</h3>
+                        <p class="card-subtitle">Quality Management</p>
+                        <div class="card-date">2017 – 2023</div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Automotive Service Technician (ASC/Q1411)</h3>
+                        <p class="card-subtitle">Automotive Skills</p>
+                        <div class="card-date">2020 – 2021</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROFESSIONAL ASSOCIATIONS -->
+            <section class="section reveal" id="associations">
+                <h2 class="section-title">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-people"/></svg></span>
+                    Professional Associations
+                </h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Two Wheeler Garage Owners &amp; Mechanic Associations</h3>
+                                </div>
+                            </div>
+                            <ul class="timeline-highlights">
+                                <li>Life Member – Since 1991</li>
+                                <li>Secretary, Maharashtra Federation – 2012 – 2013</li>
+                                <li>Secretary, Solapur District Association – 2010 – 2013</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <a class="timeline-title" href="https://drive.google.com/file/d/1Qi9blN5MGuHEkz-dTaPBITBRHNq2rIN7/view?usp=drive_link" target="_blank" title="View Rotary Document">Rotary International – Dist. 3132 ↗</a>
+                                </div>
+                            </div>
+                            <ul class="timeline-highlights">
+                                <li>Club Secretary – 2008 – 2009</li>
+                                <li>Club President – 2009 – 2010</li>
+                                <li>GML Chairman – 2010 – 2011</li>
+                                <li>Co-Chairman, Directory – 2011 – 2012, 2014 – 2015</li>
+                                <li>District Website Adviser &amp; Governor's Team – 2012 – 2013</li>
+                                <li>Regional Chairman, International Service – 2013 – 2014</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="contact-footer">
+                <h2>Let's Connect</h2>
+                <p>Feel free to reach out for business inquiries or discussions.</p>
+                <div class="contact-footer-links">
+                    <a href="tel:+919595305655">
+                        <svg viewBox="0 0 24 24"><use href="#icon-phone"/></svg> Call Me
+                    </a>
+                    <a href="https://wa.me/919595305655" target="_blank">
+                        <svg viewBox="0 0 24 24"><use href="#icon-whatsapp"/></svg> WhatsApp
+                    </a>
+                    <a href="https://wa.me/c/919595305655" target="_blank">
+                        <svg viewBox="0 0 24 24"><use href="#icon-whatsapp"/></svg> WA Catalog
+                    </a>
+                    <a href="mailto:lalat3132@gmail.com">
+                        <svg viewBox="0 0 24 24"><use href="#icon-email"/></svg> Email
+                    </a>
+                    <a href="https://goo.gl/maps/iQSF5c4iqXyi5AV37" target="_blank">
+                        <svg viewBox="0 0 24 24"><use href="#icon-location"/></svg> Location
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1AUr9G_Qc70tXIsrPaDy2-nHlRs3bmfEK?usp=drive_link" target="_blank">
+                        <svg viewBox="0 0 24 24"><use href="#icon-briefcase"/></svg> Portfolio
+                    </a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- ================= FLOATING MOBILE NAV ================= -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav__toggle" id="mobileNavToggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="mobile-nav__links" id="mobileNavLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#associations">Associations</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Desktop navbar toggle (existing)
+        const navToggle = document.getElementById('navToggle');
+        const navLinks  = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open);
+        });
+        navLinks.addEventListener('click', e => {
+            if (e.target.tagName === 'A') {
+                navLinks.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Floating mobile nav FAB
+        const mobileToggle = document.getElementById('mobileNavToggle');
+        const mobileLinks  = document.getElementById('mobileNavLinks');
+        mobileToggle.addEventListener('click', () => {
+            const open = mobileLinks.classList.toggle('open');
+            mobileToggle.classList.toggle('is-open', open);
+            mobileToggle.setAttribute('aria-expanded', open);
+        });
+        mobileLinks.addEventListener('click', e => {
+            if (e.target.tagName === 'A') {
+                mobileLinks.classList.remove('open');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // ── Scroll-reveal (Intersection Observer) ──────────────────────────
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target); // fire once only
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>

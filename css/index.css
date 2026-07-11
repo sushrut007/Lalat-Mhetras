@@ -1,0 +1,34 @@
+:root {
+    /* Main background */
+    --color-bg: #F2EEE6;
+    --bg-overlay: rgba(242, 238, 230, 0.95);
+
+    /* Sidebar and panels */
+    --color-panel-dark: #7C6A5B;
+    --color-panel-mid: #A6947F;
+
+    /* Text */
+    --color-navy: #1B2A4A;
+    --color-text: #2B2B2B;
+    --color-muted: #5C5C5C;
+
+    /* Accents */
+    --color-accent-red: #C0392B;
+    --color-gold: #C9A24B;
+    
+    /* Dividers */
+    --color-line: #D8D2C6;
+
+    /* Glass cards / Surfaces on light bg */
+    --color-surface: #FFFFFF;
+    --color-surface-alt: rgba(255, 255, 255, 0.6);
+
+    /* Surfaces on dark panel */
+    --color-surface-dark: rgba(0, 0, 0, 0.15);
+
+    /* Header/Footer */
+    --color-header-bg: rgba(242, 238, 230, 0.85);
+    --color-footer-bg: var(--color-panel-dark);
+    --color-footer-text: #FFFFFF;
+    --color-footer-muted: rgba(255, 255, 255, 0.8);
+}

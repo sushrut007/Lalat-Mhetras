@@ -1,0 +1,160 @@
+/* Tablets (<= 900px) */
+@media (max-width: 900px) {
+  /* Hide right-column navbar; FAB takes over */
+  .site-header {
+    display: none;
+  }
+
+  /* Show floating hamburger FAB */
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+  }
+
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    clip-path: none;
+    overflow: visible;
+  }
+
+  .sidebar__content {
+    height: auto;
+    overflow-y: visible;
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+    padding: var(--space-4);
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile (<= 600px) */
+@media (max-width: 600px) {
+  /* Hamburger button visible */
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Nav links hidden by default, shown when open */
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--color-header-bg);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--color-line);
+    padding: var(--space-3) var(--space-4);
+    gap: var(--space-2);
+    z-index: 100;
+  }
+
+  .navbar__links.open {
+    display: flex;
+  }
+
+  .site-header {
+    position: relative; /* so dropdown is positioned relative to header */
+  }
+
+  .contact-footer-links {
+    flex-direction: column;
+  }
+
+  .timeline {
+    padding-left: var(--space-4);
+  }
+
+  .timeline-node {
+    left: calc(var(--space-4) * -1 - 10px);
+  }
+
+  .timeline-header {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    margin-top: var(--space-2);
+    display: inline-block;
+  }
+}
+
+/* ── Touch devices: disable sticky hover effects ─────────────────────────
+   On touchscreens, :hover states "stick" after a tap (no mouse-leave).
+   @media (hover: none) targets only devices that cannot truly hover.
+   ──────────────────────────────────────────────────────────────────────── */
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+    box-shadow: var(--shadow-soft);
+    border-color: var(--color-line);
+  }
+
+  .award-card:hover {
+    border-color: var(--color-gold); /* keep gold border — it's the default for awards */
+  }
+
+  .timeline-content:hover {
+    transform: none;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .skill-tag:hover {
+    transform: none;
+    box-shadow: var(--shadow-soft);
+    border-color: var(--color-line);
+  }
+
+  .skill-tag:hover svg {
+    animation: none;
+  }
+
+  a.timeline-company:hover {
+    color: var(--color-panel-dark);
+    text-decoration: none;
+  }
+
+  a.timeline-title:hover {
+    color: var(--color-navy);
+  }
+
+  a.section-title-link:hover {
+    color: inherit;
+  }
+
+  a.section-title-link:hover .icon-badge {
+    background: var(--color-panel-mid);
+  }
+
+  .contact-footer-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+
+  .sidebar-link:hover {
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom-style: dotted;
+  }
+
+  .mobile-nav__links a:hover {
+    color: #fff;
+    padding-left: var(--space-5);
+  }
+}

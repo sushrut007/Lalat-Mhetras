@@ -3,9 +3,16 @@
     --color-bg: #F2EEE6;
     --bg-overlay: rgba(242, 238, 230, 0.95);
 
-    /* Sidebar and panels */
-    --color-panel-dark: #7C6A5B;
-    --color-panel-mid: #A6947F;
+    /* Sidebar and panels — resume palette */
+    --color-panel-dark: #7d6660;       /* resume: mid-warm brown — sidebar bg */
+    --color-panel-mid:  #A6947F;       /* lighter warm tone — timeline nodes etc */
+
+    /* Sidebar accent colours (resume palette) */
+    --color-sidebar-heading: #dfdad8;  /* off-white — headings & icon colour */
+    --color-sidebar-badge-bg: #342729; /* deepest brown — icon badge background */
+    --color-sidebar-text: rgba(223,218,216,0.88); /* soft off-white body text */
+    --color-sidebar-link: #dfdad8;     /* off-white links */
+    --color-sidebar-link-dot: rgba(223,218,216,0.5);
 
     /* Text */
     --color-navy: #1B2A4A;
@@ -14,8 +21,8 @@
 
     /* Accents */
     --color-accent-red: #C0392B;
-    --color-gold: #C9A24B;
-    
+    --color-gold: #C9A24B;             /* kept for main content (good on light bg) */
+
     /* Dividers */
     --color-line: #D8D2C6;
 

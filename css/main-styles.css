@@ -432,6 +432,39 @@ i[data-icon="calendar"] { -webkit-mask-image: url('../images/icons/calendar.svg'
   color: var(--color-text);
 }
 
+/* ── About section logo watermark (::before technique) ── */
+#about {
+  position: relative;
+  overflow: hidden;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  max-width: 480px;
+  aspect-ratio: 16 / 7;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.2;
+  filter: grayscale(10%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Keep all section content above the watermark */
+#about .section-title,
+#about .summary-text,
+#about .download-resume-btn {
+  position: relative;
+  z-index: 1;
+}
+
 /* Download Resume button in About section */
 .download-resume-btn {
   display: inline-flex;

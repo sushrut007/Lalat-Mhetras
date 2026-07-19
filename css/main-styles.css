@@ -219,8 +219,49 @@ ul { list-style: none; margin: 0; padding: 0; }
   gap: var(--space-3);
 }
 
+.sidebar-list li strong {
+  flex-shrink: 0;
+  width: 125px;
+}
+
 .sidebar-list .icon-badge {
   flex-shrink: 0;
+}
+
+/* Portfolio Banner */
+.portfolio-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  background: rgba(0, 0, 0, 0.2);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio-banner:hover,
+.portfolio-banner:active {
+  background: rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+  border-color: var(--color-gold);
+}
+
+.portfolio-logo {
+  max-width: 200px;
+  width: 90%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
 }
 
 /* Badge Icons */
@@ -444,14 +485,14 @@ i[data-icon="calendar"] { -webkit-mask-image: url('../images/icons/calendar.svg'
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 75%;
-  max-width: 480px;
+  width: 90%;
+  max-width: 650px;
   aspect-ratio: 16 / 7;
   background-image: url('../images/logo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.2;
+  opacity: 0.08;
   filter: grayscale(10%);
   pointer-events: none;
   z-index: 0;
@@ -484,7 +525,8 @@ i[data-icon="calendar"] { -webkit-mask-image: url('../images/icons/calendar.svg'
   box-shadow: var(--shadow-strong);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
-.download-resume-btn:hover {
+.download-resume-btn:hover,
+.download-resume-btn:active {
   background: var(--color-navy);
   transform: translateY(-2px);
   box-shadow: 0 16px 32px rgba(27,42,74,0.2);
@@ -532,7 +574,8 @@ a.card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.timeline-content:hover {
+.timeline-content:hover,
+.timeline-content:active {
   transform: translateX(4px);
   box-shadow: var(--shadow-strong);
 }
@@ -597,7 +640,8 @@ a.card {
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.card:hover {
+.card:hover,
+.card:active {
   transform: translateY(-5px);
   box-shadow: 0 16px 32px rgba(27,42,74,0.12);
   border-color: var(--color-gold);
@@ -650,7 +694,8 @@ a.card {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.skill-tag:hover {
+.skill-tag:hover,
+.skill-tag:active {
   transform: translateY(-2px) scale(1.03);
   box-shadow: var(--shadow-strong);
   border-color: var(--color-panel-mid);

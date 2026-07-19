@@ -75,7 +75,8 @@
   }
 
   .contact-footer-links {
-    flex-direction: column;
+    /* removed flex-direction: column to let links wrap naturally like pills */
+    gap: var(--space-2);
   }
 
   .timeline {
@@ -93,6 +94,10 @@
   .timeline-date {
     margin-top: var(--space-2);
     display: inline-block;
+  }
+
+  #about::before {
+    width: 120%;
   }
 }
 

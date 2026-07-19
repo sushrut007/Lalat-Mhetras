@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/variables.css" />
@@ -18,106 +21,132 @@
 
     <!-- Inline SVG icon definitions (reusable via <use>) -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-        <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.08 1.19h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/>
+        <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.08 1.19h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z" />
         </symbol>
-        <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <polyline points="22,6 12,13 2,6"/>
+        <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <polyline points="22,6 12,13 2,6" />
         </symbol>
-        <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
         </symbol>
-        <symbol id="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
-            <circle cx="12" cy="10" r="3"/>
+        <symbol id="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
         </symbol>
-        <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
         </symbol>
-        <symbol id="icon-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        <symbol id="icon-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c3 3 9 3 12 0v-5" />
         </symbol>
-        <symbol id="icon-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="8" r="7"/>
-            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+        <symbol id="icon-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7" />
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
         </symbol>
-        <symbol id="icon-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        <symbol id="icon-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
         </symbol>
-        <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="2" y1="12" x2="22" y2="12"/>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
         </symbol>
-        <symbol id="icon-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"/>
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        <symbol id="icon-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3" />
+            <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
         </symbol>
-        <symbol id="icon-fingerprint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10"/>
-            <path d="M12 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6v.5"/>
-            <path d="M12 14c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2"/>
+        <symbol id="icon-fingerprint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10" />
+            <path d="M12 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6v.5" />
+            <path d="M12 14c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2" />
         </symbol>
         <symbol id="icon-facebook" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
         </symbol>
-        <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
         </symbol>
-        <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
         </symbol>
     </svg>
 </head>
-<body>
+
+<body ontouchstart="">
     <div class="page-layout">
-        
+
         <!-- ================= SIDEBAR ================= -->
         <aside class="sidebar">
             <div class="sidebar__content">
                 <div class="profile-photo-container">
                     <!-- Initials placeholder (always visible, photo overlays it when loaded) -->
                     <div class="profile-placeholder" aria-hidden="true">LM</div>
-                    <img src="images/profile.png"
-                         alt="Lalat Mhetras"
-                         class="profile-photo"
-                         onerror="this.style.display='none'" />
+                    <img src="images/profile.png" alt="Lalat Mhetras" class="profile-photo"
+                        onerror="this.style.display='none'" />
                 </div>
                 <h1 class="sidebar__name">Lalat Mhetras</h1>
                 <p class="sidebar__title">Automobile</p>
 
                 <div class="social-row">
                     <a href="tel:+919595305655" aria-label="Call">
-                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-phone"/></svg></span>
+                        <span class="icon-badge"><svg viewBox="0 0 24 24">
+                                <use href="#icon-phone" />
+                            </svg></span>
                     </a>
                     <a href="mailto:lalat3132@gmail.com" aria-label="Email">
-                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-email"/></svg></span>
+                        <span class="icon-badge"><svg viewBox="0 0 24 24">
+                                <use href="#icon-email" />
+                            </svg></span>
                     </a>
                     <a href="https://wa.me/919595305655" target="_blank" aria-label="WhatsApp">
-                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-whatsapp"/></svg></span>
+                        <span class="icon-badge"><svg viewBox="0 0 24 24">
+                                <use href="#icon-whatsapp" />
+                            </svg></span>
                     </a>
                     <a href="https://goo.gl/maps/iQSF5c4iqXyi5AV37" target="_blank" aria-label="Location">
-                        <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-location"/></svg></span>
+                        <span class="icon-badge"><svg viewBox="0 0 24 24">
+                                <use href="#icon-location" />
+                            </svg></span>
                     </a>
                 </div>
-                
+
                 <div class="sidebar__section">
                     <h3 class="sidebar__heading">
-                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-fingerprint"/></svg></span>
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24">
+                                <use href="#icon-fingerprint" />
+                            </svg></span>
                         Personal Info
                     </h3>
                     <ul class="sidebar-list">
-                        <li><strong>Address:</strong> <a href="https://goo.gl/maps/iQSF5c4iqXyi5AV37" target="_blank" class="sidebar-link">Geeta Nagar, Solapur – 413005 ↗</a></li>
+                        <li><strong>Address:</strong> <a href="https://goo.gl/maps/iQSF5c4iqXyi5AV37" target="_blank"
+                                class="sidebar-link">Geeta Nagar, Solapur – 413005 ↗</a></li>
                         <li><strong>Location:</strong> Solapur, Maharashtra, India</li>
                         <li><strong>Experience:</strong> 36+ Years</li>
                         <li><strong>Date of Birth:</strong> May 1968</li>
@@ -129,17 +158,23 @@
 
                 <div class="sidebar__section">
                     <h3 class="sidebar__heading">
-                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-briefcase"/></svg></span>
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24">
+                                <use href="#icon-briefcase" />
+                            </svg></span>
                         Portfolio
                     </h3>
-                    <ul class="sidebar-list">
-                        <li><a href="https://drive.google.com/file/d/1Uc7E_HVmkoLzbLkD7lRZffDddYyKzrWj/view?usp=drive_link" target="_blank" class="sidebar-link">About my Digital Work ↗</a></li>
-                    </ul>
+                    <a href="https://drive.google.com/drive/folders/1AUr9G_Qc70tXIsrPaDy2-nHlRs3bmfEK" target="_blank"
+                        class="portfolio-banner">
+                        <img src="images/digital-logo.png" alt="Lalat's Digital Concept" class="portfolio-logo">
+                        <span class="portfolio-text">About My Digital Work ↗</span>
+                    </a>
                 </div>
 
                 <div class="sidebar__section">
                     <h3 class="sidebar__heading">
-                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-globe"/></svg></span>
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24">
+                                <use href="#icon-globe" />
+                            </svg></span>
                         Languages
                     </h3>
                     <ul class="sidebar-list">
@@ -149,7 +184,9 @@
 
                 <div class="sidebar__section">
                     <h3 class="sidebar__heading">
-                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-award"/></svg></span>
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24">
+                                <use href="#icon-award" />
+                            </svg></span>
                         Volunteering
                     </h3>
                     <ul class="sidebar-list">
@@ -159,7 +196,9 @@
 
                 <div class="sidebar__section">
                     <h3 class="sidebar__heading">
-                        <span class="icon-badge sm"><svg viewBox="0 0 24 24"><use href="#icon-people"/></svg></span>
+                        <span class="icon-badge sm"><svg viewBox="0 0 24 24">
+                                <use href="#icon-people" />
+                            </svg></span>
                         Interests
                     </h3>
                     <ul class="sidebar-list">
@@ -191,13 +230,21 @@
             <!-- ABOUT SUMMARY -->
             <section class="section reveal" id="about">
                 <h2 class="section-title">
-                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-fingerprint"/></svg></span>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24">
+                            <use href="#icon-fingerprint" />
+                        </svg></span>
                     Professional Summary
                 </h2>
                 <p class="summary-text">
-                    I am Lalat Mhetras proprietor of Sharp Auto Service-Multi brand Work Shop doing the service work of Hero Honda motorcycle for almost last 36 and more years. I had taken training from Laxmi Automobiles,Solapur. authorized dealer of Hero Honda Spare parts. I was working with the above firm in the service department from 1986 to 1991 at the various posts. I had also been to Delhi in that span of time as trainee at the Hero Honda Centre, Delhi. Also arranged free service camps in Solapur &amp;at the nearby places of Solapur.
+                    I am Lalat Mhetras proprietor of Sharp Auto Service-Multi brand Work Shop doing the service work of
+                    Hero Honda motorcycle for almost last 36 and more years. I had taken training from Laxmi
+                    Automobiles,Solapur. authorized dealer of Hero Honda Spare parts. I was working with the above firm
+                    in the service department from 1986 to 1991 at the various posts. I had also been to Delhi in that
+                    span of time as trainee at the Hero Honda Centre, Delhi. Also arranged free service camps in Solapur
+                    &amp;at the nearby places of Solapur.
                 </p>
-                <a href="https://drive.google.com/file/d/1IvAx_FWNO5sLjHKhA1Ga0t5NyUlQxXz1/view?usp=sharing" target="_blank" class="download-resume-btn" title="Download Resume">
+                <a href="https://drive.google.com/file/d/1O79_FQuBVKjLf65Ro06QPjrJb-tkUjeM/view?usp=sharing"
+                    target="_blank" class="download-resume-btn" title="Download Resume">
                     ⬇ Download Resume
                 </a>
             </section>
@@ -205,7 +252,9 @@
             <!-- EXPERIENCE -->
             <section class="section reveal" id="experience">
                 <h2 class="section-title">
-                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-briefcase"/></svg></span>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24">
+                            <use href="#icon-briefcase" />
+                        </svg></span>
                     Work Experience
                 </h2>
                 <div class="timeline">
@@ -215,7 +264,10 @@
                             <div class="timeline-header">
                                 <div>
                                     <h3 class="timeline-title">Manager</h3>
-                                    <a class="timeline-company" href="https://drive.google.com/file/d/1Wzuy8JR9dorGhiHKCbG5VEx_WA7Up7Nx/view?usp=sharing" target="_blank" title="View Badge">Bakale nx E-Motors (Authorized Dealer, Lectrix EV) ↗</a>
+                                    <a class="timeline-company"
+                                        href="https://drive.google.com/file/d/1Wzuy8JR9dorGhiHKCbG5VEx_WA7Up7Nx/view?usp=sharing"
+                                        target="_blank" title="View Badge">Bakale nx E-Motors (Authorized Dealer,
+                                        Lectrix EV) ↗</a>
                                 </div>
                                 <span class="timeline-date">July 2025 – Present</span>
                             </div>
@@ -239,7 +291,9 @@
                             <div class="timeline-header">
                                 <div>
                                     <h3 class="timeline-title">Business Associate</h3>
-                                    <a class="timeline-company" href="https://drive.google.com/file/d/1GjPNah8jlojEVVEPx1p2RlMVhNmNsT4c/view?usp=sharing" target="_blank" title="View Badge">Kaizen Honda ↗</a>
+                                    <a class="timeline-company"
+                                        href="https://drive.google.com/file/d/1GjPNah8jlojEVVEPx1p2RlMVhNmNsT4c/view?usp=sharing"
+                                        target="_blank" title="View Badge">Kaizen Honda ↗</a>
                                 </div>
                                 <span class="timeline-date">2021 – 2023</span>
                             </div>
@@ -251,7 +305,9 @@
                             <div class="timeline-header">
                                 <div>
                                     <h3 class="timeline-title">Proprietor</h3>
-                                    <a class="timeline-company" href="https://drive.google.com/file/d/1R7_NaI9onhqsbaKxtGQHqFKHuLTZN0WM/view?usp=drive_link" target="_blank" title="View Badge">Sharp Auto Service ↗</a>
+                                    <a class="timeline-company"
+                                        href="https://drive.google.com/file/d/1R7_NaI9onhqsbaKxtGQHqFKHuLTZN0WM/view?usp=drive_link"
+                                        target="_blank" title="View Badge">Sharp Auto Service ↗</a>
                                 </div>
                                 <span class="timeline-date">2016 – 2021</span>
                             </div>
@@ -263,7 +319,10 @@
                             <div class="timeline-header">
                                 <div>
                                     <h3 class="timeline-title">Partner</h3>
-                                    <a class="timeline-company" href="https://drive.google.com/file/d/1W1VCDVxjWbkhaOEixQKLBobtM2UKmVYs/view?usp=share_link" target="_blank" title="View Badge">Sharp Auto Service – Honda Clinic | Pune ↗</a>
+                                    <a class="timeline-company"
+                                        href="https://drive.google.com/file/d/1W1VCDVxjWbkhaOEixQKLBobtM2UKmVYs/view?usp=share_link"
+                                        target="_blank" title="View Badge">Sharp Auto Service – Honda Clinic | Pune
+                                        ↗</a>
                                 </div>
                                 <span class="timeline-date">2013 – 2016</span>
                             </div>
@@ -275,7 +334,9 @@
                             <div class="timeline-header">
                                 <div>
                                     <h3 class="timeline-title">Proprietor (Own Workshop)</h3>
-                                    <a class="timeline-company" href="https://drive.google.com/file/d/1Uc7E_HVmkoLzbLkD7lRZffDddYyKzrWj/view?usp=drive_link" target="_blank" title="View Badge">Sharp Auto Service ↗</a>
+                                    <a class="timeline-company"
+                                        href="https://drive.google.com/file/d/1Uc7E_HVmkoLzbLkD7lRZffDddYyKzrWj/view?usp=drive_link"
+                                        target="_blank" title="View Badge">Sharp Auto Service ↗</a>
                                 </div>
                                 <span class="timeline-date">1991 – 2013</span>
                             </div>
@@ -291,7 +352,9 @@
                             <div class="timeline-header">
                                 <div>
                                     <h3 class="timeline-title">Work Shop Incharge</h3>
-                                    <a class="timeline-company" href="https://drive.google.com/file/d/1QsdRz5zeNPhNol5iu4IXIGfg6cS0xGwR/view" target="_blank" title="View Document">Laxmi Automobiles ↗</a>
+                                    <a class="timeline-company"
+                                        href="https://drive.google.com/file/d/1QsdRz5zeNPhNol5iu4IXIGfg6cS0xGwR/view"
+                                        target="_blank" title="View Document">Laxmi Automobiles ↗</a>
                                 </div>
                                 <span class="timeline-date">1989 – 1991</span>
                             </div>
@@ -303,7 +366,9 @@
                             <div class="timeline-header">
                                 <div>
                                     <h3 class="timeline-title">SR. Mechanic</h3>
-                                    <a class="timeline-company" href="https://drive.google.com/file/d/1HTKDWY2Lm9JcnpDJZMM6akJ0YgwXHtO8/view" target="_blank" title="View Badge">Laxmi Automobiles ↗</a>
+                                    <a class="timeline-company"
+                                        href="https://drive.google.com/file/d/1HTKDWY2Lm9JcnpDJZMM6akJ0YgwXHtO8/view"
+                                        target="_blank" title="View Badge">Laxmi Automobiles ↗</a>
                                 </div>
                                 <span class="timeline-date">1988 – 1989</span>
                             </div>
@@ -315,7 +380,9 @@
                             <div class="timeline-header">
                                 <div>
                                     <h3 class="timeline-title">JR. Mechanic</h3>
-                                    <a class="timeline-company" href="https://drive.google.com/file/d/1GeeMHFRaq2rCvzK3HmR-72XdtV8HMLU6/view" target="_blank" title="View Badge">Laxmi Automobiles | Solapur ↗</a>
+                                    <a class="timeline-company"
+                                        href="https://drive.google.com/file/d/1GeeMHFRaq2rCvzK3HmR-72XdtV8HMLU6/view"
+                                        target="_blank" title="View Badge">Laxmi Automobiles | Solapur ↗</a>
                                 </div>
                                 <span class="timeline-date">1986 – 1988</span>
                             </div>
@@ -330,7 +397,9 @@
             <!-- EDUCATION -->
             <section class="section reveal" id="education">
                 <h2 class="section-title">
-                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-graduation"/></svg></span>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24">
+                            <use href="#icon-graduation" />
+                        </svg></span>
                     Education
                 </h2>
                 <div class="grid-2">
@@ -344,7 +413,9 @@
                         <p class="card-subtitle">Digambar Jain Gurukul High School</p>
                         <div class="card-date">1983 – 1984</div>
                     </div>
-                    <a class="card reveal reveal-delay-3" href="https://drive.google.com/file/d/1QnP0CcK7qGq7rLvEn1Qx9wWkldIEiMMi/view?usp=drive_link" target="_blank" title="View Certificate">
+                    <a class="card reveal reveal-delay-3"
+                        href="https://drive.google.com/file/d/1QnP0CcK7qGq7rLvEn1Qx9wWkldIEiMMi/view?usp=drive_link"
+                        target="_blank" title="View Certificate">
                         <h3 class="card-title">National Certificate in Modular Employable Skills (I.T.I.)</h3>
                         <p class="card-subtitle">Vocational Training</p>
                         <div class="card-date">2010 – 2011</div>
@@ -355,51 +426,115 @@
             <!-- SKILLS -->
             <section class="section reveal" id="skills">
                 <h2 class="section-title">
-                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg></span>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg></span>
                     Skills
                 </h2>
                 <div class="skills-container">
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> 2 Wheeler Troubleshooting</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Management Work</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Well Knowledge of Computer</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Excel for Beginners</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Introduction to Digital Marketing</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Content Marketing Basics</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Social Media Management</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Google Search Campaign</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Website Creation</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> AI in Digital Marketing</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> ChatGPT for Beginners</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Digital Card Creation</a>
-                    <a class="skill-tag" href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link" target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24"><use href="#icon-gear"/></svg> Reporting</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> 2 Wheeler Troubleshooting</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Management Work</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Well Knowledge of Computer</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Excel for Beginners</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Introduction to Digital Marketing</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Content Marketing Basics</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Social Media Management</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Google Search Campaign</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Website Creation</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> AI in Digital Marketing</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> ChatGPT for Beginners</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Digital Card Creation</a>
+                    <a class="skill-tag"
+                        href="https://drive.google.com/drive/folders/11W5vh-EDXMV263JtfnfNz2SsyTfGf11T?usp=drive_link"
+                        target="_blank" title="View Skill Certificate"><svg viewBox="0 0 24 24">
+                            <use href="#icon-gear" />
+                        </svg> Reporting</a>
                 </div>
             </section>
 
             <!-- CERTIFICATIONS & AWARDS -->
             <section class="section reveal" id="certifications">
                 <h2 class="section-title">
-                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-award"/></svg></span>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24">
+                            <use href="#icon-award" />
+                        </svg></span>
                     Certifications &amp; Awards
                 </h2>
-                
+
                 <h3 style="margin-bottom:16px; color:var(--color-navy);">Awards</h3>
                 <div class="grid-2" style="margin-bottom:32px;">
-                    <a class="card award-card reveal reveal-delay-1" href="https://drive.google.com/file/d/1R9hAF1Tct2ISlxzzWpyP_aZTs4sa0Lpx/view" target="_blank" title="View Award">
+                    <a class="card award-card reveal reveal-delay-1"
+                        href="https://drive.google.com/file/d/1R9hAF1Tct2ISlxzzWpyP_aZTs4sa0Lpx/view" target="_blank"
+                        title="View Award">
                         <h3 class="card-title">Best Garage Award</h3>
                         <p class="card-subtitle">Solapur</p>
                         <div class="card-date">1994 – 1995</div>
                     </a>
-                    <a class="card award-card reveal reveal-delay-2" href="https://drive.google.com/file/d/1R4r6oY-58Zzl8iGixgx1dvfPZaIkNHS_/view" target="_blank" title="View Award">
+                    <a class="card award-card reveal reveal-delay-2"
+                        href="https://drive.google.com/file/d/1R4r6oY-58Zzl8iGixgx1dvfPZaIkNHS_/view" target="_blank"
+                        title="View Award">
                         <h3 class="card-title">Best Performer of the Year</h3>
                         <p class="card-subtitle">Rotary District</p>
                         <div class="card-date">2011 – 2012</div>
                     </a>
-                    <a class="card award-card reveal reveal-delay-3" href="https://drive.google.com/file/d/1_ntTjnYYcQdlGEhhHHpiHewgjBjllq6z/view?usp=sharing" target="_blank" title="View Award">
+                    <a class="card award-card reveal reveal-delay-3"
+                        href="https://drive.google.com/file/d/1_ntTjnYYcQdlGEhhHHpiHewgjBjllq6z/view?usp=sharing"
+                        target="_blank" title="View Award">
                         <h3 class="card-title">Best Service Award</h3>
                         <p class="card-subtitle">Castrol India</p>
                         <div class="card-date">2013 – 2014</div>
                     </a>
-                    <a class="card award-card reveal reveal-delay-4" href="https://drive.google.com/file/d/1J7Ur4EVQfcZTHAuc6QXocyemI3a_Ukv6/view?usp=drive_link" target="_blank" title="View Award">
+                    <a class="card award-card reveal reveal-delay-4"
+                        href="https://drive.google.com/file/d/1J7Ur4EVQfcZTHAuc6QXocyemI3a_Ukv6/view?usp=drive_link"
+                        target="_blank" title="View Award">
                         <h3 class="card-title">Appreciated by World Book of Records</h3>
                         <p class="card-subtitle">London, UK</p>
                         <div class="card-date">2022</div>
@@ -408,17 +543,22 @@
 
                 <h3 style="margin-bottom:16px; color:var(--color-navy);">Certifications</h3>
                 <div class="grid-2">
-                    <a class="card" href="https://drive.google.com/file/d/1GeeMHFRaq2rCvzK3HmR-72XdtV8HMLU6/view?usp=drive_link" target="_blank" title="View Certificate">
+                    <a class="card"
+                        href="https://drive.google.com/file/d/1GeeMHFRaq2rCvzK3HmR-72XdtV8HMLU6/view?usp=drive_link"
+                        target="_blank" title="View Certificate">
                         <h3 class="card-title">Certification of Training – Hero Honda</h3>
                         <p class="card-subtitle">New Delhi</p>
                         <div class="card-date">1987 – 1988</div>
                     </a>
-                    <a class="card" href="https://drive.google.com/file/d/1QeIREa5RbLD8Hd1yQhn2K7XB_87WLg-e/view?usp=drive_link" target="_blank" title="View Certificate">
+                    <a class="card"
+                        href="https://drive.google.com/file/d/1QeIREa5RbLD8Hd1yQhn2K7XB_87WLg-e/view?usp=drive_link"
+                        target="_blank" title="View Certificate">
                         <h3 class="card-title">ISO 9001:2015 Certification</h3>
                         <p class="card-subtitle">Quality Management</p>
                         <div class="card-date">2017 – 2023</div>
                     </a>
-                    <a class="card" href="https://drive.google.com/file/d/1fjZsVkk_mwJ1GjEnhAlv-ntj7gFb-J3J/view" target="_blank" title="View Certificate">
+                    <a class="card" href="https://drive.google.com/file/d/1fjZsVkk_mwJ1GjEnhAlv-ntj7gFb-J3J/view"
+                        target="_blank" title="View Certificate">
                         <h3 class="card-title">Automotive Service Technician (ASC/Q1411)</h3>
                         <p class="card-subtitle">Automotive Skills</p>
                         <div class="card-date">2020 – 2021</div>
@@ -429,16 +569,21 @@
             <!-- PROFESSIONAL ASSOCIATIONS -->
             <section class="section reveal" id="associations">
                 <h2 class="section-title">
-                    <span class="icon-badge"><svg viewBox="0 0 24 24"><use href="#icon-people"/></svg></span>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24">
+                            <use href="#icon-people" />
+                        </svg></span>
                     Professional Associations
                 </h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-node"></div>
-                        <a class="timeline-content" href="https://drive.google.com/file/d/1gjZnAG1gHaMotfngMvKr3wP029EqD441/view?usp=drive_link" target="_blank" title="View Document">
+                        <a class="timeline-content"
+                            href="https://drive.google.com/file/d/1gjZnAG1gHaMotfngMvKr3wP029EqD441/view?usp=drive_link"
+                            target="_blank" title="View Document">
                             <div class="timeline-header">
                                 <div>
-                                    <h3 class="timeline-title">Two Wheeler Garage Owners &amp; Mechanic Associations ↗</h3>
+                                    <h3 class="timeline-title">Two Wheeler Garage Owners &amp; Mechanic Associations ↗
+                                    </h3>
                                 </div>
                             </div>
                             <ul class="timeline-highlights">
@@ -453,7 +598,10 @@
                         <div class="timeline-content">
                             <div class="timeline-header">
                                 <div>
-                                    <a class="timeline-title" href="https://drive.google.com/file/d/1Qi9blN5MGuHEkz-dTaPBITBRHNq2rIN7/view?usp=drive_link" target="_blank" title="View Rotary Document">Rotary International – Dist. 3132 ↗</a>
+                                    <a class="timeline-title"
+                                        href="https://drive.google.com/file/d/1Qi9blN5MGuHEkz-dTaPBITBRHNq2rIN7/view?usp=drive_link"
+                                        target="_blank" title="View Rotary Document">Rotary International – Dist. 3132
+                                        ↗</a>
                                 </div>
                             </div>
                             <ul class="timeline-highlights">
@@ -475,31 +623,50 @@
                 <p>Feel free to reach out for business inquiries or discussions.</p>
                 <div class="contact-footer-links">
                     <a href="tel:+919595305655">
-                        <svg viewBox="0 0 24 24"><use href="#icon-phone"/></svg> Call Me
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-phone" />
+                        </svg> Call Me
                     </a>
                     <a href="https://wa.me/919595305655" target="_blank">
-                        <svg viewBox="0 0 24 24"><use href="#icon-whatsapp"/></svg> WhatsApp
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-whatsapp" />
+                        </svg> WhatsApp
                     </a>
                     <a href="https://wa.me/c/919595305655" target="_blank">
-                        <svg viewBox="0 0 24 24"><use href="#icon-whatsapp"/></svg> WA Catalog
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-whatsapp" />
+                        </svg> WA Catalog
                     </a>
                     <a href="mailto:lalat3132@gmail.com">
-                        <svg viewBox="0 0 24 24"><use href="#icon-email"/></svg> Email
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-email" />
+                        </svg> Email
                     </a>
                     <a href="https://goo.gl/maps/iQSF5c4iqXyi5AV37" target="_blank">
-                        <svg viewBox="0 0 24 24"><use href="#icon-location"/></svg> Location
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-location" />
+                        </svg> Location
                     </a>
-                    <a href="https://drive.google.com/file/d/1Uc7E_HVmkoLzbLkD7lRZffDddYyKzrWj/view?usp=drive_link" target="_blank">
-                        <svg viewBox="0 0 24 24"><use href="#icon-briefcase"/></svg> Portfolio
+                    <a href="https://drive.google.com/file/d/1Uc7E_HVmkoLzbLkD7lRZffDddYyKzrWj/view?usp=drive_link"
+                        target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-briefcase" />
+                        </svg> Portfolio
                     </a>
                     <a href="https://www.facebook.com/lalat007/" target="_blank" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24"><use href="#icon-facebook"/></svg> Facebook
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-facebook" />
+                        </svg> Facebook
                     </a>
                     <a href="https://www.instagram.com/lalat.mhetras/?hl=en" target="_blank" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24"><use href="#icon-instagram"/></svg> Instagram
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-instagram" />
+                        </svg> Instagram
                     </a>
                     <a href="https://www.linkedin.com/in/lalat-mhetras-150b3035/" target="_blank" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24"><use href="#icon-linkedin"/></svg> LinkedIn
+                        <svg viewBox="0 0 24 24">
+                            <use href="#icon-linkedin" />
+                        </svg> LinkedIn
                     </a>
                 </div>
             </footer>
@@ -525,7 +692,7 @@
     <script>
         // Desktop navbar toggle (existing)
         const navToggle = document.getElementById('navToggle');
-        const navLinks  = document.getElementById('navLinks');
+        const navLinks = document.getElementById('navLinks');
         navToggle.addEventListener('click', () => {
             const open = navLinks.classList.toggle('open');
             navToggle.setAttribute('aria-expanded', open);
@@ -539,7 +706,7 @@
 
         // Floating mobile nav FAB
         const mobileToggle = document.getElementById('mobileNavToggle');
-        const mobileLinks  = document.getElementById('mobileNavLinks');
+        const mobileLinks = document.getElementById('mobileNavLinks');
         mobileToggle.addEventListener('click', () => {
             const open = mobileLinks.classList.toggle('open');
             mobileToggle.classList.toggle('is-open', open);
@@ -566,4 +733,5 @@
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     </script>
 </body>
+
 </html>

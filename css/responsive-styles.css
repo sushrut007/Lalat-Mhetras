@@ -79,21 +79,37 @@
     gap: var(--space-2);
   }
 
-  .timeline {
-    padding-left: var(--space-4);
+  /* Mobile footer: icon only — hide text labels */
+  .footer-link-text {
+    display: none;
   }
 
-  .timeline-node {
-    left: calc(var(--space-4) * -1 - 10px);
+  /* Mobile footer icons: tighten padding to fit more icons per row */
+  .contact-footer-links a {
+    padding: 10px 12px;
   }
 
-  .timeline-header {
+  /* Skills: 2-column grid on mobile for neat alignment */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-tag {
+    justify-content: center;
+  }
+
+  /* Compact timeline logos on mobile */
+  .timeline-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Audio bio card: stack vertically on small screens */
+  .audio-bio-card {
     flex-direction: column;
-  }
-
-  .timeline-date {
-    margin-top: var(--space-2);
-    display: inline-block;
+    gap: var(--space-3);
+    padding: var(--space-4);
   }
 
   #about::before {
@@ -151,6 +167,12 @@
   .contact-footer-links a:hover {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
+  }
+
+  .audio-bio-btn:hover {
+    background: var(--color-gold);
+    transform: none;
+    box-shadow: 0 4px 16px rgba(201,161,89,0.35);
   }
 
   .sidebar-link:hover {

@@ -471,6 +471,104 @@ i[data-icon="calendar"] { -webkit-mask-image: url('../images/icons/calendar.svg'
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--color-text);
+  text-align: justify;
+}
+
+/* ── Audio Bio Widget ────────────────────────────────── */
+.audio-bio-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  background: linear-gradient(135deg, var(--color-panel-dark) 0%, #2c3e72 100%);
+  border: 1px solid rgba(201, 161, 89, 0.4);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+  box-shadow: 0 8px 24px rgba(27,42,74,0.18);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.audio-bio-card::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(201,161,89,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.audio-bio-icon {
+  font-size: 2.4rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.audio-bio-body {
+  flex: 1;
+}
+
+.audio-bio-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--color-gold);
+  margin: 0 0 var(--space-2) 0;
+  letter-spacing: 0.5px;
+}
+
+.audio-bio-desc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  margin: 0 0 var(--space-4) 0;
+  line-height: 1.6;
+}
+
+.audio-bio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-gold);
+  color: var(--color-panel-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 4px 16px rgba(201,161,89,0.35);
+}
+
+.audio-bio-btn:hover,
+.audio-bio-btn:active {
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201,161,89,0.4);
+}
+
+.audio-play-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--color-panel-dark);
+  color: var(--color-gold);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.audio-bio-btn:hover .audio-play-icon {
+  transform: scale(1.15);
 }
 
 /* ── About section logo watermark (::before technique) ── */
@@ -598,6 +696,28 @@ a.card {
   margin-bottom: var(--space-2);
 }
 
+.timeline-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2);
+  flex-shrink: 0;
+  margin-left: var(--space-3);
+}
+
+/* Company logo in timeline card */
+.timeline-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  background: #fff;
+  border: 1px solid var(--color-line);
+  padding: 4px;
+  box-shadow: var(--shadow-soft);
+  flex-shrink: 0;
+}
+
 .timeline-title {
   font-size: 1.3rem;
   margin: 0;
@@ -615,6 +735,7 @@ a.card {
   color: #fff;
   padding: 4px 12px;
   border-radius: var(--radius-full);
+  white-space: nowrap;
 }
 
 .timeline-highlights {
@@ -788,6 +909,31 @@ a.timeline-company {
 a.timeline-company:hover {
   color: var(--color-accent-red);
   text-decoration: underline;
+}
+
+/* ── Stretched link: makes the entire timeline card clickable ──────────────
+   The ::after pseudo-element expands invisibly over the whole card.
+   .timeline-content already has position:relative — no extra CSS needed there.
+   ────────────────────────────────────────────────────────────────────────── */
+.timeline-content a.timeline-company::after,
+.timeline-content a.timeline-title::after {
+  content: '';
+  position: absolute;
+  inset: 0;          /* covers the full card */
+  z-index: 1;        /* above static card content */
+  border-radius: inherit;
+}
+
+/* Keep the logo clickable above the stretched overlay */
+.timeline-logo {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure timeline highlights text is selectable above the overlay */
+.timeline-highlights {
+  position: relative;
+  z-index: 2;
 }
 
 /* Timeline title as link (Rotary) */
